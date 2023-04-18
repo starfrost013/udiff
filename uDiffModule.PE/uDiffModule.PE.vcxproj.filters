@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="External">
+      <UniqueIdentifier>{5f2c9d82-416f-47bc-82ea-41be804c4acf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pe-parse">
+      <UniqueIdentifier>{0c703678-520f-4acf-9bb2-65f2e431fd3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pe-parse\src">
+      <UniqueIdentifier>{48f964ee-5065-4c5f-b85d-f94c3b690fb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pe-parse\include">
+      <UniqueIdentifier>{cd21d526-911b-4abd-8733-b95d62840bea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\pe-parse\pe-parser-library\include\pe-parse\nt-headers.h">
+      <Filter>External\pe-parse\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\pe-parse\pe-parser-library\include\pe-parse\parse.h">
+      <Filter>External\pe-parse\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\pe-parse\pe-parser-library\include\pe-parse\to_string.h">
+      <Filter>External\pe-parse\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\pe-parse\pe-parser-library\src\buffer.cpp">
+      <Filter>External\pe-parse\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\pe-parse\pe-parser-library\src\parse.cpp">
+      <Filter>External\pe-parse\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\pe-parse\pe-parser-library\src\unicode_codecvt.cpp">
+      <Filter>External\pe-parse\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\pe-parse\pe-parser-library\src\unicode_winapi.cpp">
+      <Filter>External\pe-parse\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\external\pe-parse\LICENSE">
+      <Filter>External\pe-parse</Filter>
+    </None>
+  </ItemGroup>
+</Project>
